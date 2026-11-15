@@ -4,4 +4,4 @@ Static website for Northisle Partners: Philippines-based offshore teams and done
 
 Plain HTML/CSS with a little JavaScript, no build step. Hosted on Netlify (deploys from the gh-pages branch).
 
-Contact: maplebridgeops@gmail.com
+Contact: northislepartners@gmail.com
