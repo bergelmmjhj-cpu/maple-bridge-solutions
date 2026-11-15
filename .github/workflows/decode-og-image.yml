@@ -1,9 +1,9 @@
-# One-off helper: the site files were uploaded through a text-only API, so the
+# The site files are uploaded through a text-only API, so the
 # social preview image is stored as base64. This decodes it to og-image.png.
 name: Decode social preview image
 on:
   push:
-    branches: [main]
+    branches: [main, gh-pages]
     paths: [og-image.png.b64]
   workflow_dispatch:
 permissions:

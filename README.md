@@ -1,7 +1,7 @@
-# Maple Bridge Solutions
+# Northisle Partners
 
-Static website for Maple Bridge Solutions: Philippines-based offshore teams and done-for-you services for Canadian small and mid-size businesses.
+Static website for Northisle Partners: Philippines-based offshore teams and done-for-you services for Canadian small and mid-size businesses.
 
-Plain HTML/CSS with a little JavaScript, no build step. Hosted on GitHub Pages.
+Plain HTML/CSS with a little JavaScript, no build step. Hosted on Netlify (deploys from the gh-pages branch).
 
 Contact: maplebridgeops@gmail.com
