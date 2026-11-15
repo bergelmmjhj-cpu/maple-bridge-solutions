@@ -1,0 +1,22 @@
+# One-off helper: the site files were uploaded through a text-only API, so the
+# social preview image is stored as base64. This decodes it to og-image.png.
+name: Decode social preview image
+on:
+  push:
+    branches: [main]
+    paths: [og-image.png.b64]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode and commit
+        run: |
+          base64 -d og-image.png.b64 > og-image.png
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add og-image.png
+          git diff --cached --quiet || (git commit -m "Add og-image.png (decoded)" && git push)
