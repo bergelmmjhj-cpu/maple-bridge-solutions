@@ -2,132 +2,258 @@
 <html lang="en-CA">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add("js");</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Northisle Partners | Offshore Teams for Canadian Businesses</title>
 <meta name="description" content="Northisle Partners helps Canadian small and mid-size businesses build Philippines-based offshore teams: telemarketers, lead generation, customer service, virtual assistants, outbound campaigns, social media, custom systems and back-office support.">
 <link rel="canonical" href="https://northislepartners.netlify.app/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#14213d">
+<meta name="theme-color" content="#10233F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Northisle Partners">
 <meta property="og:title" content="Northisle Partners | Offshore Teams for Canadian Businesses">
 <meta property="og:description" content="Philippines-based offshore staff and done-for-you growth services for Canadian small and mid-size businesses.">
 <meta property="og:url" content="https://northislepartners.netlify.app/">
 <meta property="og:image" content="https://northislepartners.netlify.app/og-image.png">
+<meta property="og:image:alt" content="Northisle Partners. Philippines-based offshore teams for Canadian businesses.">
 <meta property="og:locale" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,620;1,9..144,520&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-specialist.webp" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site">
-  <nav class="container nav" aria-label="Main">
-    <a class="brand" href="./"><img src="favicon.svg" alt="" width="36" height="36"><span>Northisle <b>Partners</b></span></a>
-    <ul>
-      <li class="hide-sm"><a href="#how">How it works</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li class="hide-sm"><a href="#why">Why the Philippines</a></li>
-      <li><a class="btn small" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header class="site-header">
+  <div class="container header-bar">
+    <a class="brand" href="./">
+      <img src="favicon.svg" alt="" width="40" height="40">
+      <span class="brand-name">Northisle <span>Partners</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Open menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#why">Why the Philippines</a></li>
+        <li><a class="btn btn-small" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main id="main">
-  <section class="hero">
-    <div class="container">
-      <span class="eyebrow">Offshore teams for Canadian small and mid-size businesses</span>
-      <h1>Grow your Canadian business with a dedicated team in the Philippines</h1>
-      <p class="lead">Northisle Partners sets up and manages Philippines-based staff for your sales, customer service and operations, and builds the systems that keep them productive. You focus on running the business; we help you get more done.</p>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-media">
+      <img src="assets/img/hero-specialist.webp" width="1280" height="720" alt="A specialist wearing a headset works on a laptop in a bright office." fetchpriority="high" decoding="async">
+      <video class="bg-video" data-min-width="960" data-webm="assets/video/hero-loop.webm" data-mp4="assets/video/hero-loop.mp4" muted loop playsinline poster="assets/img/hero-specialist.webp" aria-hidden="true"></video>
+      <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#fffcf9" d="M0 58C180 100 340 16 560 40C820 68 980 8 1200 36C1320 52 1380 70 1440 48V100H0Z"/>
+      </svg>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Offshore teams for Canadian small and mid-size businesses</p>
+      <h1 id="hero-title">Grow your Canadian business with a <em>dedicated</em> team in the Philippines</h1>
+      <p class="lead">Northisle Partners sets up and manages Philippines-based staff for your sales, customer service and operations, and builds the systems that keep them productive. You focus on running the business. We help you get more done.</p>
       <div class="cta-row">
         <a class="btn" href="mailto:northislepartners@gmail.com?subject=Northisle%20Partners%20enquiry">Email us to get started</a>
-        <a class="btn ghost" href="services.html">See all services</a>
+        <a class="btn btn-ghost" href="services.html">See all services</a>
       </div>
       <p class="note">Prefer to write directly? <a href="mailto:northislepartners@gmail.com">northislepartners@gmail.com</a></p>
     </div>
   </section>
 
-  <section id="how" aria-labelledby="how-title">
+  <section class="band" id="how" aria-labelledby="how-title">
     <div class="container">
-      <h2 id="how-title">How it works</h2>
-      <p class="section-intro">A simple, three-step process. No long forms, no guesswork.</p>
-      <div class="grid three">
-        <div class="card"><div class="step-num">1</div><h3>Tell us what you need</h3><p>Send us an email describing the work: the roles, the hours, the tools you use and what a good result looks like for you.</p></div>
-        <div class="card"><div class="step-num">2</div><h3>We build your plan and team</h3><p>We propose the right mix of offshore staff, services and systems, then set up the people, scripts, processes and reporting.</p></div>
-        <div class="card"><div class="step-num">3</div><h3>Launch, monitor and improve</h3><p>Your team starts working. We track daily output with end-of-day reports, keep you informed and adjust as your needs change.</p></div>
+      <div class="section-head reveal">
+        <p class="eyebrow">The process</p>
+        <h2 id="how-title">How it works</h2>
+        <p class="section-intro">A simple, three-step process. No long forms, no guesswork.</p>
+      </div>
+      <div class="how-layout">
+        <ol class="steps reveal">
+          <li>
+            <span class="step-num">01</span>
+            <div>
+              <h3>Tell us what you need</h3>
+              <p>Send us an email describing the work: the roles, the hours, the tools you use and what a good result looks like for you.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <div>
+              <h3>We build your plan and team</h3>
+              <p>We propose the right mix of offshore staff, services and systems, then set up the people, scripts, processes and reporting.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <div>
+              <h3>Launch, monitor and improve</h3>
+              <p>Your team starts working. We track daily output with end-of-day reports, keep you informed and adjust as your needs change.</p>
+            </div>
+          </li>
+        </ol>
+        <figure class="frame reveal">
+          <img src="assets/img/video-call.webp" width="1152" height="864" alt="A man speaks and gestures toward a laptop during a video call." loading="lazy" decoding="async">
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="alt" id="services" aria-labelledby="services-title">
+  <section class="band band-paper" id="services" aria-labelledby="services-title">
     <div class="container">
-      <h2 id="services-title">Services</h2>
-      <p class="section-intro">Pick one service or combine several. Every engagement is shaped around your business.</p>
-      <div class="grid four">
-        <div class="card"><div class="icon" aria-hidden="true">👥</div><h3>Offshore staff</h3><p>Telemarketers, lead generation specialists, customer service agents, and operations or virtual assistants.</p><a class="more" href="services.html#offshore-staff" aria-label="Learn more about offshore staff">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">🎯</div><h3>Done-for-you lead sourcing</h3><p>Researched, organized lists of businesses that match your ideal customer, ready for outreach.</p><a class="more" href="services.html#lead-sourcing" aria-label="Learn more about done-for-you lead sourcing">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">📞</div><h3>Outbound email and calling</h3><p>Cold email and phone campaigns to book conversations and appointments for your team.</p><a class="more" href="services.html#outbound" aria-label="Learn more about outbound email and calling">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">🎬</div><h3>Social media and video</h3><p>Facebook posting, YouTube channel support, scripts and thumbnails.</p><a class="more" href="services.html#social-video" aria-label="Learn more about social media and video">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">🛠️</div><h3>Custom systems</h3><p>Websites, CRMs, dashboards, and web or mobile apps built around how you work.</p><a class="more" href="services.html#custom-systems" aria-label="Learn more about custom systems">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">📋</div><h3>Back office</h3><p>Payroll, HR support, staff end-of-day report monitoring and scheduling.</p><a class="more" href="services.html#back-office" aria-label="Learn more about back office">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">🤖</div><h3>Managed AI agent fleet</h3><p>AI agents set up and supervised to handle repetitive research, follow-ups and reporting.</p><a class="more" href="services.html#ai-agents" aria-label="Learn more about managed ai agent fleet">Learn more →</a></div>
-        <div class="card"><div class="icon" aria-hidden="true">🤝</div><h3>Freelance and team management</h3><p>Work directly with our founder on a project, or have him manage your remote team for you.</p><a class="more" href="services.html#freelance" aria-label="Learn more about freelance and team management">Learn more →</a></div>
+      <div class="section-head reveal">
+        <p class="eyebrow">What we offer</p>
+        <h2 id="services-title">Services shaped around your business</h2>
+        <p class="section-intro">Pick one service or combine several. Every engagement is shaped around your business.</p>
       </div>
+      <div class="card-grid">
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="2.6"/><circle cx="16.2" cy="9" r="2"/><path d="M4.2 18.5c.5-2.6 2.4-4 4.8-4s4.3 1.4 4.8 4"/><path d="M14 14.8c1.3-.3 2.6 0 3.5 1.1.6.8 1 1.8 1.2 2.6"/></svg></div>
+          <h3>Offshore staff</h3>
+          <p>Telemarketers, lead generation specialists, customer service agents, and operations or virtual assistants.</p>
+          <a class="more" href="services.html#offshore-staff">Learn more <span class="sr-only">about offshore staff</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3.2V6M12 18v2.8M3.2 12H6M18 12h2.8"/></svg></div>
+          <h3>Done-for-you lead sourcing</h3>
+          <p>Researched, organized lists of businesses that match your ideal customer, ready for outreach.</p>
+          <a class="more" href="services.html#lead-sourcing">Learn more <span class="sr-only">about done-for-you lead sourcing</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5v-.8a7.5 7.5 0 0 1 15 0v.8"/><path d="M4.5 12.5h2.4v4.6H5.6A1.6 1.6 0 0 1 4 15.5v-3zM19.5 12.5H17v4.6h1.3a1.6 1.6 0 0 0 1.2-1.6v-3z"/><path d="M8.2 17.6c.5 1.1 1.8 1.9 3.8 1.9h1.2"/></svg></div>
+          <h3>Outbound email and calling</h3>
+          <p>Cold email and phone campaigns to book conversations and appointments for your team.</p>
+          <a class="more" href="services.html#outbound">Learn more <span class="sr-only">about outbound email and calling</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="6.5" width="12" height="11" rx="2"/><path d="M15 10.2 21 7.6v8.8l-6-2.6z"/></svg></div>
+          <h3>Social media and video</h3>
+          <p>Facebook posting, YouTube channel support, scripts and thumbnails.</p>
+          <a class="more" href="services.html#social-video">Learn more <span class="sr-only">about social media and video</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></div>
+          <h3>Custom systems</h3>
+          <p>Websites, CRMs, dashboards, and web or mobile apps built around how you work.</p>
+          <a class="more" href="services.html#custom-systems">Learn more <span class="sr-only">about custom systems</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="6" y="3.5" width="12" height="17" rx="2"/><path d="M9 3.5h6V6.2H9zM9 10.5h6M9 14.2h4"/></svg></div>
+          <h3>Back office</h3>
+          <p>Payroll, HR support, staff end-of-day report monitoring and scheduling.</p>
+          <a class="more" href="services.html#back-office">Learn more <span class="sr-only">about back office</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.2 13.2 8.1 18 9.3 13.2 10.5 12 15.4 10.8 10.5 6 9.3 10.8 8.1 12 3.2z"/><path d="M17.4 14.2l.55 1.7 1.75.2-1.35 1.15.45 1.7-1.4-.85-1.4.85.45-1.7-1.35-1.15 1.75-.2z"/></svg></div>
+          <h3>Managed AI agent fleet</h3>
+          <p>AI agents set up and supervised to handle repetitive research, follow-ups and reporting.</p>
+          <a class="more" href="services.html#ai-agents">Learn more <span class="sr-only">about the managed AI agent fleet</span><span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3"/><path d="M5.5 19.2c.8-3.1 3.1-4.7 6.5-4.7s5.7 1.6 6.5 4.7"/></svg></div>
+          <h3>Freelance and team management</h3>
+          <p>Work directly with our founder on a project, or have him manage your remote team for you.</p>
+          <a class="more" href="services.html#freelance">Learn more <span class="sr-only">about freelance and team management</span><span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <p class="section-cta reveal"><a class="btn" href="services.html">Browse services in detail</a></p>
     </div>
   </section>
 
-  <section id="why" aria-labelledby="why-title">
-    <div class="container two-col">
-      <div>
+  <section class="band" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">An honest look</p>
         <h2 id="why-title">Why offshore staff from the Philippines?</h2>
         <p class="section-intro">Offshore staffing is not right for every role, but for many Canadian businesses it is a practical way to add capacity. Here is an honest look at the benefits.</p>
       </div>
-      <ul class="checks">
-        <li><strong>Strong English communication.</strong> English is an official language in the Philippines and is widely used in business and education.</li>
-        <li><strong>Cost-effective capacity.</strong> Labour costs in the Philippines are generally lower than in Canada, so your budget can cover more hours of support.</li>
-        <li><strong>Experienced talent pool.</strong> The Philippines has a large, established outsourcing industry with many people experienced in calling, customer service and admin work.</li>
-        <li><strong>Coverage across Canadian time zones.</strong> Staff can work shifts aligned with your business hours, from Atlantic to Pacific time, or after hours for extended coverage.</li>
-        <li><strong>Managed, not just hired.</strong> We pair staff with clear processes, scripts and daily end-of-day reporting so you can see what is getting done.</li>
-      </ul>
+    </div>
+    <div class="team-intro reveal">
+      <p class="eyebrow">On the floor</p>
+      <h3>Your team in the Philippines</h3>
+      <p>Dedicated people at their desks, covering the hours your business needs: calls, follow-ups, admin and a daily record of the work.</p>
+    </div>
+    <div class="team-media">
+      <img src="assets/img/bpo-office-team.webp" width="1280" height="720" alt="People wearing headsets work at rows of desks in a bright open office, while a colleague stands to help." loading="lazy" decoding="async">
+      <video data-min-width="0" data-webm="assets/video/bpo-office-team.webm" data-mp4="assets/video/bpo-office-team.mp4" muted loop playsinline poster="assets/img/bpo-office-team.webp" aria-hidden="true"></video>
+      <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#fffcf9" d="M0 48C220 92 420 12 700 42C980 72 1160 18 1440 50V100H0Z"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="why-layout">
+        <figure class="frame frame-alt reveal">
+          <img src="assets/img/team-collab.webp" width="1152" height="864" alt="Four colleagues gather around a laptop during a working session." loading="lazy" decoding="async">
+        </figure>
+        <ul class="checks reveal">
+          <li><strong>Strong English communication.</strong> English is an official language in the Philippines and is widely used in business and education.</li>
+          <li><strong>Cost-effective capacity.</strong> Labour costs in the Philippines are generally lower than in Canada, so your budget can cover more hours of support.</li>
+          <li><strong>Experienced talent pool.</strong> The Philippines has a large, established outsourcing industry with many people experienced in calling, customer service and admin work.</li>
+          <li><strong>Coverage across Canadian time zones.</strong> Staff can work shifts aligned with your business hours, from Atlantic to Pacific time, or after hours for extended coverage.</li>
+          <li><strong>Managed, not just hired.</strong> We pair staff with clear processes, scripts and daily end-of-day reporting so you can see what is getting done.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="contact" id="contact" aria-labelledby="contact-title">
-    <div class="container two-col">
-      <div>
+  <section class="band band-paper" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contact</p>
         <h2 id="contact-title">Let's talk about your business</h2>
         <p class="section-intro">Tell us what you would like help with and we will reply by email with next steps.</p>
-        <p>Email us at:</p>
-        <p class="email-big"><a href="mailto:northislepartners@gmail.com?subject=Northisle%20Partners%20enquiry">northislepartners@gmail.com</a></p>
-        <p>Helpful details to include: your business name, what the role or project involves, the hours you need covered and when you would like to start.</p>
       </div>
-      <form class="mailform" id="mailform" action="mailto:northislepartners@gmail.com" method="post" enctype="text/plain">
-        <label>Your name<input id="f-name" name="name" type="text" autocomplete="name" required></label>
-        <label>Business name<input id="f-company" name="company" type="text" autocomplete="organization"></label>
-        <label>Interested in
-          <select id="f-service" name="service">
-            <option>Offshore staff</option>
-            <option>Done-for-you lead sourcing</option>
-            <option>Outbound email and calling campaigns</option>
-            <option>Social media and video</option>
-            <option>Custom systems</option>
-            <option>Back office support</option>
-            <option>Managed AI agent fleet</option>
-            <option>Freelance or team management</option>
-            <option>Not sure yet</option>
-          </select>
-        </label>
-        <label>How can we help?<textarea id="f-msg" name="message" required></textarea></label>
-        <button class="btn" type="submit">Open in my email app</button>
-        <p class="hint">This form opens a pre-filled message in your own email app. Nothing is stored on this website.</p>
-      </form>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p>Email us at:</p>
+          <p class="email-big"><a href="mailto:northislepartners@gmail.com?subject=Northisle%20Partners%20enquiry">northislepartners@gmail.com</a></p>
+          <p class="help">Helpful details to include: your business name, what the role or project involves, the hours you need covered and when you would like to start.</p>
+        </div>
+        <form class="mailform reveal" id="mailform" action="mailto:northislepartners@gmail.com" method="post" enctype="text/plain">
+          <label>Your name <span class="req">(required)</span>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>Business name
+            <input id="f-company" name="company" type="text" autocomplete="organization">
+          </label>
+          <label>Interested in
+            <select id="f-service" name="service">
+              <option>Offshore staff</option>
+              <option>Done-for-you lead sourcing</option>
+              <option>Outbound email and calling campaigns</option>
+              <option>Social media and video</option>
+              <option>Custom systems</option>
+              <option>Back office support</option>
+              <option>Managed AI agent fleet</option>
+              <option>Freelance or team management</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>How can we help? <span class="req">(required)</span>
+            <textarea id="f-msg" name="message" required></textarea>
+          </label>
+          <button class="btn" type="submit">Open in my email app</button>
+          <p class="hint">This form opens a pre-filled message in your own email app. Nothing is stored on this website.</p>
+        </form>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site">
-  <div class="container row">
-    <span>© <span id="yr">2026</span> Northisle Partners. Serving Canadian businesses.</span>
-    <span><a href="services.html">Services</a> · <a href="mailto:northislepartners@gmail.com">northislepartners@gmail.com</a></span>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div>
+      <div class="word">Northisle <span>Partners</span></div>
+      <p>Dedicated offshore teams for Canadian businesses.</p>
+    </div>
+    <p>© <span id="yr">2026</span> Northisle Partners. <a href="services.html">Services</a> · <a href="mailto:northislepartners@gmail.com">northislepartners@gmail.com</a></p>
   </div>
 </footer>
 <script src="main.js" defer></script>
