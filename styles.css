@@ -297,6 +297,37 @@ h2 { font-size: clamp(2rem, 3.4vw, 3.05rem); color: var(--navy); margin: 0; }
 }
 .offer-grid > li:nth-child(4),
 .offer-grid > li:nth-child(5) { grid-column: span 3; }
+.offer-grid > li.is-team {
+  grid-column: 1 / -1;
+  align-items: center;
+  background: var(--navy);
+  color: #fffcf9;
+  border-color: var(--navy);
+}
+.offer-grid > li.is-team .offer-icon {
+  background: rgba(255, 252, 249, 0.12);
+  color: #fffcf9;
+}
+.team-flag {
+  display: inline-block;
+  margin: 0 0.4rem 0.15rem 0;
+  padding: 0.14rem 0.48rem;
+  background: #f0c9ce;
+  color: var(--navy);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+.offer-chips li.is-team {
+  background: var(--navy);
+  color: #fffcf9;
+  border-color: var(--navy);
+  font-weight: 700;
+}
 .offer-grid > li.is-bold {
   border-color: #e4c8cc;
   box-shadow: inset 3px 0 0 var(--red);
