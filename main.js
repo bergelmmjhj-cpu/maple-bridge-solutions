@@ -182,18 +182,4 @@
     });
   }
 
-  var form = document.getElementById("mailform");
-  if (!form) return;
-  form.addEventListener("submit", function (event) {
-    if (!form.checkValidity()) return;
-    event.preventDefault();
-    var value = function (id) {
-      var field = document.getElementById(id);
-      return field ? field.value.trim() : "";
-    };
-    var company = value("f-company");
-    var subject = "Enquiry: " + value("f-service") + (company ? " (" + company + ")" : "");
-    var body = "Name: " + value("f-name") + "\nBusiness: " + company + "\nInterested in: " + value("f-service") + "\n\n" + value("f-msg");
-    window.location.href = "mailto:hello@northislepartners.org?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  });
 })();

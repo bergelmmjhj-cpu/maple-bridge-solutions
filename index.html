@@ -414,31 +414,33 @@
           <p class="email-big"><a href="mailto:hello@northislepartners.org?subject=Northisle%20Partners%20enquiry">hello@northislepartners.org</a></p>
           <p class="help">Helpful details to include: your business name, what the role or project involves, the hours you need covered and when you would like to start.</p>
         </div>
-        <form class="mailform reveal" id="mailform" action="mailto:hello@northislepartners.org" method="post" enctype="text/plain">
-          <label>Your name <span class="req">(required)</span>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </label>
-          <label>Business name
-            <input id="f-company" name="company" type="text" autocomplete="organization">
-          </label>
-          <label>Interested in
-            <select id="f-service" name="service">
-              <option>Offshore staff</option>
-              <option>Done-for-you lead sourcing</option>
-              <option>Outbound email and calling campaigns</option>
-              <option>Social media and video</option>
-              <option>Custom systems</option>
-              <option>Back office support</option>
-              <option>Managed AI agent fleet</option>
-              <option>Freelance or team management</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-          <label>How can we help? <span class="req">(required)</span>
+        <form class="mailform reveal" id="mailform" action="https://formsubmit.co/hello@northislepartners.org" method="POST">
+          <input type="hidden" name="_next" value="https://northislepartners.org/thank-you">
+          <input type="hidden" name="_subject" value="New enquiry from northislepartners.org">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field-row">
+            <label>Name <span class="req">(required)</span>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </label>
+            <label>Company
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </label>
+          </div>
+          <div class="field-row">
+            <label>Email <span class="req">(required)</span>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </label>
+            <label>Phone
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+            </label>
+          </div>
+          <label>Message <span class="req">(required)</span>
             <textarea id="f-msg" name="message" required></textarea>
           </label>
-          <button class="btn" type="submit">Open in my email app</button>
-          <p class="hint">This form opens a pre-filled message in your own email app. Nothing is stored on this website.</p>
+          <button class="btn" type="submit">Send message</button>
+          <p class="hint">We'll reply by email within one business day.</p>
         </form>
       </div>
     </div>

@@ -764,10 +764,16 @@ a.more:hover { gap: 0.55rem; color: var(--red-deep); }
 .mailform label select,
 .mailform label textarea { display: block; margin-top: 0.4rem; }
 .req { font-weight: 600; color: var(--muted); }
+.mailform .field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.95rem;
+}
 .mailform input,
 .mailform select,
 .mailform textarea {
   font: inherit;
+  font-size: 1rem;
   color: var(--ink);
   background: var(--white);
   border: 1px solid #d5cec3;
@@ -779,7 +785,12 @@ a.more:hover { gap: 0.55rem; color: var(--red-deep); }
 .mailform input:focus-visible,
 .mailform select:focus-visible,
 .mailform textarea:focus-visible { outline: 2px solid var(--red); border-color: var(--red); }
+.mailform .btn { justify-self: start; }
 .hint { margin: 0; color: var(--muted); font-size: 0.85rem; font-weight: 500; }
+@media (max-width: 680px) {
+  .mailform .field-row { grid-template-columns: 1fr; }
+  .mailform .btn { width: 100%; justify-self: stretch; }
+}
 
 .page-hero { background: var(--paper); padding: 4.75rem 0 6.5rem; position: relative; text-align: center; }
 .page-hero h1 { margin: 0; color: var(--navy); font-size: clamp(2.3rem, 4.4vw, 3.7rem); text-align: center; }
