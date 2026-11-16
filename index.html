@@ -62,6 +62,11 @@
       <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
         <path fill="#f3efe7" d="M0 58C180 100 340 16 560 40C820 68 980 8 1200 36C1320 52 1380 70 1440 48V100H0Z"/>
       </svg>
+      <div class="hero-card" aria-hidden="true">
+        <span class="hero-card-label"><span class="live-dot"></span>Full-time specialist</span>
+        <span class="hero-card-price">$600</span>
+        <span class="hero-card-sub">every 2 weeks · 40 h/week</span>
+      </div>
     </div>
     <div class="hero-copy">
       <p class="eyebrow">Offshore teams for Canadian small and mid-size businesses</p>
@@ -73,6 +78,7 @@
         <a class="btn btn-ghost" href="services.html">See all services</a>
       </div>
       <p class="note">Prefer to write directly? <a href="mailto:hello@northislepartners.org">hello@northislepartners.org</a></p>
+      <p class="clock" data-clock hidden><span class="live-dot"></span><span>It's <b data-time-local>--</b> where you are and <b data-time-manila>--</b> in Manila. Your team works your hours.</span></p>
     </div>
   </section>
 
@@ -248,6 +254,29 @@
           <p>Save about $46,000 a year, roughly 74% less than a typical local hire.</p>
           <p>Over 60% less, even against minimum wage.</p>
         </div>
+        <div class="calc" data-calc hidden>
+          <div class="calc-controls">
+            <h3 class="calc-title">Run your own numbers</h3>
+            <label class="calc-staff" for="calc-staff">Full-time staff <output id="calc-staff-out" for="calc-staff">1</output></label>
+            <input type="range" id="calc-staff" min="1" max="20" value="1">
+            <fieldset class="calc-toggle">
+              <legend>Compare against</legend>
+              <label><input type="radio" name="calc-base" value="61836" checked><span>Typical local hire</span></label>
+              <label><input type="radio" name="calc-base" value="41818"><span>Minimum wage</span></label>
+            </fieldset>
+            <label class="calc-rate" for="calc-rate">If that work lands on you now, what's an hour of your time worth?
+              <span class="calc-rate-input"><span aria-hidden="true">$</span><input id="calc-rate" type="number" inputmode="numeric" min="0" max="2000" step="5" value="75"><span aria-hidden="true">/ hour</span></span>
+            </label>
+          </div>
+          <div class="calc-result" aria-live="polite">
+            <p><span>Hiring locally</span><strong data-calc-local>$61,836</strong></p>
+            <p><span>With Northisle Partners</span><strong data-calc-ours>$15,600</strong></p>
+            <p class="calc-save"><span>You keep about</span><strong data-calc-save>$46,236</strong><em>every year</em></p>
+            <p class="calc-wait"><span>Every month you wait costs about</span><strong data-calc-wait>$3,853</strong></p>
+            <p class="calc-time"><span>Hours handed off each year: <b data-calc-hours>2,080</b>. At your rate, that's</span><strong data-calc-time>$156,000</strong><em>of your time back</em></p>
+            <p class="calc-perk" data-calc-perk hidden><span class="team-flag">Team perk</span> Custom system, website, dashboard and CRM included.</p>
+          </div>
+        </div>
         <p class="price-footnote">Local cost estimate: full-time administrative assistant (40 h/week) at the Toronto Region median wage of $26.50/h (Government of Canada <a href="https://www.jobbank.gc.ca/marketreport/wages-occupation/24789/geo9219">Job Bank</a>, NOC 13110), plus mandatory 4% vacation pay (Ontario ESA) and 2026 employer CPP (5.95%) and EI (2.282%). Minimum-wage floor uses Ontario's $17.95/h (Oct 2026). Excludes recruiting, benefits, equipment, office space and WSIB. All amounts in CAD.</p>
       </div>
       <div class="compare">
@@ -276,11 +305,18 @@
           </ul>
         </article>
       </div>
-      <ul class="trust-strip reveal">
-        <li>First month free of contract</li>
-        <li>Free replacement if your specialist isn't the right fit</li>
-      </ul>
-      <p class="term-line reveal">Then simple 6-month terms that renew until you cancel.</p>
+      <div class="promise reveal">
+        <div class="promise-seal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.2 2.3 2.3 4.3-4.6"/></svg></div>
+        <div>
+          <h3>The Northisle Promise</h3>
+          <p class="promise-lead">You carry almost none of the risk.</p>
+          <ol class="promise-list">
+            <li><strong>First month, no contract.</strong> Pay just that month and walk away if it's not right.</li>
+            <li><strong>Free replacement.</strong> If your specialist isn't the right fit, we replace them at no cost.</li>
+            <li><strong>Simple terms after that.</strong> 6-month terms that renew until you cancel.</li>
+          </ol>
+        </div>
+      </div>
       <p class="value-close reveal">You're not adding an expense. You're turning a fixed cost into a flexible one and buying back the time that grows your business.</p>
       <div class="offer reveal">
         <p class="offer-banner"><span>Limited-time offer</span> Free website development when you hire a full-time specialist.</p>
@@ -322,6 +358,45 @@
           <li><strong>Coverage across Canadian time zones.</strong> Staff can work shifts aligned with your business hours, from Atlantic to Pacific time, or after hours for extended coverage.</li>
           <li><strong>Managed, not just hired.</strong> We pair staff with clear processes, scripts and daily end-of-day reporting so you can see what is getting done.</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Straight answers</p>
+        <h2 id="faq-title">Questions business owners ask us</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>What does it cost?</summary>
+          <p>A full-time specialist (40 hours a week) starts from CAD $600 every 2 weeks. For a limited time, website development is free when you hire a full-time specialist. Tailored systems and CRMs are custom-quoted, or included when you hire 6 or more staff.</p>
+        </details>
+        <details>
+          <summary>Am I locked into a long contract?</summary>
+          <p>No. Your first month has no contract: pay just that month and walk away if it's not right. After that, simple 6-month terms renew until you cancel.</p>
+        </details>
+        <details>
+          <summary>What if my specialist isn't the right fit?</summary>
+          <p>We replace them free of charge.</p>
+        </details>
+        <details>
+          <summary>Will they work during my business hours?</summary>
+          <p>Yes. Staff work shifts aligned with your business hours, from Atlantic to Pacific time, or after hours if you want extended coverage.</p>
+        </details>
+        <details>
+          <summary>How will I know the work is getting done?</summary>
+          <p>We set up clear processes, scripts and daily end-of-day reports, track output and keep you informed, so you can see exactly what is getting done.</p>
+        </details>
+        <details>
+          <summary>Do I have to handle recruiting, payroll or benefits?</summary>
+          <p>No. There's no recruitment cost and no benefits or payroll overhead on your side. We help define the role, onboard the person and keep things running smoothly.</p>
+        </details>
+        <details>
+          <summary>Who will I actually work with?</summary>
+          <p>You can work directly with our founder, Bergel Sarenas, on a specific project, or have him manage your remote team for you day to day.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -369,6 +444,8 @@
     </div>
   </section>
 </main>
+
+<div class="mobile-cta" data-mobile-cta><a class="btn" href="mailto:hello@northislepartners.org?subject=Book%20a%2015-min%20call">Book a 15-min call</a></div>
 
 <footer class="site-footer">
   <div class="container footer-row">

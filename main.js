@@ -116,6 +116,72 @@
     document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-in"); });
   }
 
+  // Thin scroll-progress line under the header.
+  if (header) {
+    var setProgress = function () {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      header.style.setProperty("--progress", max > 0 ? Math.min(1, window.scrollY / max) : 0);
+    };
+    setProgress();
+    window.addEventListener("scroll", setProgress, { passive: true });
+    window.addEventListener("resize", setProgress);
+  }
+
+  // Visitor's time next to Manila's, refreshed every 30 s.
+  var clock = document.querySelector("[data-clock]");
+  if (clock && window.Intl) {
+    var fmt = function (zone) {
+      return new Date().toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit", timeZone: zone });
+    };
+    var tick = function () {
+      clock.querySelector("[data-time-local]").textContent = fmt(undefined);
+      clock.querySelector("[data-time-manila]").textContent = fmt("Asia/Manila");
+    };
+    try { tick(); clock.hidden = false; setInterval(tick, 30000); } catch (e) { /* old browser: keep it hidden */ }
+  }
+
+  // Savings calculator: same per-person figures as the price table.
+  var calc = document.querySelector("[data-calc]");
+  if (calc) {
+    var OURS = 15600, HOURS = 2080; // per full-time specialist per year
+    var money = function (n) { return "$" + Math.round(n).toLocaleString("en-CA"); };
+    var staff = document.getElementById("calc-staff");
+    var staffOut = document.getElementById("calc-staff-out");
+    var update = function () {
+      var n = parseInt(staff.value, 10);
+      var base = parseInt(calc.querySelector("input[name=calc-base]:checked").value, 10);
+      staffOut.textContent = String(n);
+      staff.style.setProperty("--fill", ((n - 1) / (staff.max - 1)) * 100 + "%");
+      calc.querySelector("[data-calc-local]").textContent = money(base * n);
+      calc.querySelector("[data-calc-ours]").textContent = money(OURS * n);
+      calc.querySelector("[data-calc-save]").textContent = money((base - OURS) * n);
+      calc.querySelector("[data-calc-wait]").textContent = money(((base - OURS) * n) / 12);
+      var rate = Math.max(0, Math.min(2000, parseFloat(document.getElementById("calc-rate").value) || 0));
+      calc.querySelector("[data-calc-hours]").textContent = (HOURS * n).toLocaleString("en-CA");
+      calc.querySelector("[data-calc-time]").textContent = money(HOURS * n * rate);
+      calc.querySelector("[data-calc-perk]").hidden = n < 6;
+    };
+    calc.addEventListener("input", update);
+    update();
+    calc.hidden = false;
+  }
+
+  // Phone-only sticky call button: shows after the hero, hides at the contact section.
+  var bar = document.querySelector("[data-mobile-cta]");
+  var hero = document.querySelector(".hero, .page-hero");
+  if (bar && hero && "IntersectionObserver" in window) {
+    var heroGone = false, endIn = {};
+    var sync = function () {
+      var atEnd = Object.keys(endIn).some(function (k) { return endIn[k]; });
+      bar.classList.toggle("is-shown", heroGone && !atEnd);
+    };
+    new IntersectionObserver(function (e) { heroGone = !e[0].isIntersecting; sync(); }).observe(hero);
+    // Hide over the contact section and footer so it never covers them.
+    [document.getElementById("contact") || document.querySelector(".close"), document.querySelector(".site-footer")].forEach(function (el, i) {
+      if (el) new IntersectionObserver(function (e) { endIn[i] = e[0].isIntersecting; sync(); }).observe(el);
+    });
+  }
+
   var form = document.getElementById("mailform");
   if (!form) return;
   form.addEventListener("submit", function (event) {
