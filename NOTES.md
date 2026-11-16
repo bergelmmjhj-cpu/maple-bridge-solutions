@@ -7,4 +7,5 @@
 - SEO files: `robots.txt`, `sitemap.xml` (add new pages here) and `404.html` (uses root-relative paths so it works at any URL).
 - Social preview: `og-image.png`. A base64 copy is kept in `og-image.png.b64` for text-only uploads. `.github/workflows/decode-og-image.yml` decodes it when that file changes on `main` or `gh-pages`.
 - Booking: every "Book a discovery call" button links to https://cal.com/northislepartners/discovery-call (30 min).
+- Careers: /careers/ is unlisted on purpose (noindex, not in sitemap, no links from client pages) so Canadian clients don't come across it. Share the link directly in job posts. Applications go to FormSubmit, then /careers/thank-you/.
 - Contact: hello@northislepartners.org. No phone on the site until there is a business number. The homepage form posts to FormSubmit. The owner activates that address from FormSubmit's confirmation email. After that, submissions redirect to /thank-you (also /thank-you.html). The thank-you page is noindex and is intentionally left out of sitemap.xml. Nothing is stored on this website.

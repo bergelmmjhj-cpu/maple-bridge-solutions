@@ -787,6 +787,28 @@ a.more:hover { gap: 0.55rem; color: var(--red-deep); }
 .mailform textarea:focus-visible { outline: 2px solid var(--red); border-color: var(--red); }
 .mailform .btn { justify-self: start; }
 .hint { margin: 0; color: var(--muted); font-size: 0.85rem; font-weight: 500; }
+.mailform .check-group { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.mailform .check-group legend { width: 100%; margin-bottom: 0.45rem; padding: 0; font-weight: 700; font-size: 0.92rem; color: var(--navy); }
+.mailform .check-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid #d5cec3;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mailform .check-group label:has(input:checked) { border-color: var(--red); background: #fbe9ec; }
+.mailform input[type="checkbox"] { width: 1.05rem; height: 1.05rem; margin: 0; padding: 0; accent-color: var(--red); flex: 0 0 auto; }
+.mailform .check-group input,
+.mailform .consent input { display: inline-block; }
+.mailform .consent { display: flex; gap: 0.6rem; align-items: flex-start; font-weight: 600; line-height: 1.5; }
+.mailform .consent input { margin-top: 0.2rem; }
+.careers-apply { max-width: 52rem; }
+.careers-steps { max-width: 46rem; margin: 0 auto; }
+.careers-needs { max-width: 46rem; margin: 2.5rem auto 0; }
+.careers-needs h3 { margin: 0 0 1rem; color: var(--navy); font-size: 1.5rem; }
 @media (max-width: 680px) {
   .mailform .field-row { grid-template-columns: 1fr; }
   .mailform .btn { width: 100%; justify-self: stretch; }
