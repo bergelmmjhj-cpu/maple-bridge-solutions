@@ -128,6 +128,6 @@
     var company = value("f-company");
     var subject = "Enquiry: " + value("f-service") + (company ? " (" + company + ")" : "");
     var body = "Name: " + value("f-name") + "\nBusiness: " + company + "\nInterested in: " + value("f-service") + "\n\n" + value("f-msg");
-    window.location.href = "mailto:northislepartners@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    window.location.href = "mailto:hello@northislepartners.org?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   });
 })();
