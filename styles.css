@@ -1188,3 +1188,14 @@ a.more:hover { gap: 0.55rem; color: var(--red-deep); }
 html:not(.js) .calc-wrap { display: none; }
 /* Keep the hero lead on the light side of the photo fade */
 @media (min-width: 960px) { .hero .lead { max-width: 29rem; } }
+
+/* Privacy policy */
+.legal { padding-top: 3rem; }
+.legal-body { max-width: 44rem; }
+.legal-body h2 { font-size: clamp(1.35rem, 2vw, 1.65rem); margin: 2.4rem 0 0.6rem; }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body p, .legal-body li { color: var(--muted); }
+.legal-body p { margin: 0 0 0.9rem; }
+.legal-body ul { margin: 0 0 0.9rem; padding-left: 1.2rem; display: grid; gap: 0.45rem; }
+.legal-body strong { color: var(--navy); }
+.form-privacy { margin: 0; color: var(--muted); font-size: 0.85rem; }
