@@ -7,9 +7,9 @@
 <title>Northisle Partners | Offshore Teams for Canadian Businesses</title>
 <meta name="description" content="Philippines-based offshore staff for Canadian small and mid-size businesses. Full-time from CAD $600 every 2 weeks, with no contract for your first month.">
 <link rel="canonical" href="https://northislepartners.org/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#10233F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Northisle Partners">
@@ -23,8 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,620;1,9..144,520&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/hero-specialist.webp" fetchpriority="high">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/site.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Northisle Partners","url":"https://northislepartners.org/","logo":"https://northislepartners.org/assets/img/northisle-wordmark.png","email":"hello@northislepartners.org","description":"Philippines-based offshore staff and done-for-you growth services for Canadian small and mid-size businesses.","areaServed":"CA"}
 </script>
@@ -33,10 +32,10 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container header-bar">
-    <a class="brand" href="./">
+    <a class="brand" href="/">
       <picture>
-        <source srcset="assets/img/northisle-wordmark.webp" type="image/webp">
-        <img src="assets/img/northisle-wordmark.png" alt="Northisle Partners" width="502" height="96">
+        <source srcset="/assets/img/northisle-wordmark.webp" type="image/webp">
+        <img src="/assets/img/northisle-wordmark.png" alt="Northisle Partners" width="502" height="96">
       </picture>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -45,9 +44,10 @@
     </button>
     <nav id="site-nav" aria-label="Main">
       <ul>
-        <li><a href="#how">How it works</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#why">Why the Philippines</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/process.html">How we work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
         <li><a class="btn btn-small" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></li>
       </ul>
     </nav>
@@ -55,151 +55,185 @@
 </header>
 
 <main id="main">
+  <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-media">
-      <img src="assets/img/hero-specialist.webp" width="1280" height="720" alt="A specialist wearing a headset works on a laptop in a bright office." fetchpriority="high" decoding="async">
-      <video class="bg-video" data-min-width="960" data-webm="assets/video/hero-loop.webm" data-mp4="assets/video/hero-loop.mp4" muted loop playsinline poster="assets/img/hero-specialist.webp" aria-hidden="true"></video>
-      <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-        <path fill="#f3efe7" d="M0 58C180 100 340 16 560 40C820 68 980 8 1200 36C1320 52 1380 70 1440 48V100H0Z"/>
-      </svg>
-      <div class="hero-card" aria-hidden="true">
-        <span class="hero-card-label"><span class="live-dot"></span>Full-time specialist</span>
-        <span class="hero-card-price">$600</span>
-        <span class="hero-card-sub">every 2 weeks · 40 h/week</span>
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow rise">Offshore teams for Canadian small and mid-size businesses</p>
+        <h1 id="hero-title" class="display rise" style="--d:.08s">Grow your Canadian business with a <em>dedicated</em> team in the Philippines</h1>
+        <p class="hero-offer rise" style="--d:.14s"><b>From CAD $600</b> every 2 weeks for full-time staff. First month, no contract.</p>
+        <p class="lead rise" style="--d:.2s">Northisle Partners sets up and manages Philippines-based staff for your sales, customer service and admin, so you can focus on running the business.</p>
+        <div class="cta-row rise" style="--d:.26s">
+          <a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call <svg class="ico arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#value">See what you'd save</a>
+        </div>
+        <p class="hero-note rise" style="--d:.32s">
+          <span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Free replacement if it's not the right fit</span>
+          <span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Daily end-of-day reports</span>
+        </p>
       </div>
-    </div>
-    <div class="hero-copy">
-      <p class="eyebrow">Offshore teams for Canadian small and mid-size businesses</p>
-      <h1 id="hero-title">Grow your Canadian business with a <em>dedicated</em> team in the Philippines</h1>
-      <p class="hero-offer">Full-time staff from CAD $600 every 2 weeks. First month, no contract.</p>
-      <p class="lead">Northisle Partners sets up and manages Philippines-based staff for your sales, customer service and admin, so you can focus on running the business.</p>
-      <div class="cta-row">
-        <a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a>
-        <a class="btn btn-ghost" href="#value">See what you'd save</a>
+
+      <div class="hero-art rise" style="--d:.18s">
+        <svg class="bridge" viewBox="0 0 600 560" fill="none" aria-hidden="true">
+          <g stroke="rgba(255,255,255,.08)">
+            <circle cx="300" cy="280" r="250"/><circle cx="300" cy="280" r="190"/><circle cx="300" cy="280" r="130"/>
+          </g>
+          <path id="bridge-lane" class="dash" d="M140 160 C 220 40, 470 120, 440 400" stroke="#f2b51f" stroke-width="2.2"/>
+          <path class="dash" d="M120 200 C 160 380, 330 470, 440 400" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+          <circle r="6" fill="#f2b51f" style="filter:drop-shadow(0 0 8px rgba(242,181,31,.9))"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#bridge-lane"/></animateMotion></circle>
+          <!-- north: Canada -->
+          <g transform="translate(140 160)">
+            <circle r="34" fill="rgba(31,63,166,.35)" stroke="rgba(255,255,255,.25)"/>
+            <path class="twinkle" d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z" fill="#f2b51f"/>
+          </g>
+          <text x="96" y="222" fill="#fff" font-family="Manrope, sans-serif" font-size="13" font-weight="800" letter-spacing="2.5">CANADA</text>
+          <!-- isle: Philippines -->
+          <g transform="translate(440 400)">
+            <circle r="44" fill="rgba(214,38,46,.22)"><animate attributeName="r" values="34;50;34" dur="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
+            <path d="M-26 10 L-4 -26 L4 -26 L26 10 Z" fill="#1f3fa6" stroke="#fff" stroke-width="2"/>
+            <path d="M-30 18 q8 -7 15 0 t15 0 t15 0 t15 0" stroke="#d6262e" stroke-width="3"/>
+            <path d="M-30 27 q8 -7 15 0 t15 0 t15 0 t15 0" stroke="#5b7be0" stroke-width="3"/>
+          </g>
+          <text x="384" y="478" fill="#fff" font-family="Manrope, sans-serif" font-size="13" font-weight="800" letter-spacing="2.5">PHILIPPINES</text>
+        </svg>
+
+        <div class="float-card price-float">
+          <small><span class="live-dot"></span>Full-time specialist</small>
+          <span class="big"><sup>$</sup>600</span>
+          <p>every 2 weeks · 40 h/week</p>
+        </div>
+
+        <div class="float-card clock-float" data-clock hidden>
+          <div class="head"><span class="live-dot"></span>Your team works your hours</div>
+          <div class="row">
+            <div class="zone"><small>Your time</small><b data-time-local>--</b></div>
+            <div class="zone ph"><small>Manila</small><b data-time-manila>--</b></div>
+          </div>
+        </div>
+
+        <div class="float-card tag-float">
+          <span class="ic"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-4.5"/></svg></span>
+          <span><b>First month, no contract</b><small>Walk away if it's not right</small></span>
+        </div>
       </div>
-      <p class="clock" data-clock hidden><span class="live-dot"></span><span>It's <b data-time-local>--</b> where you are and <b data-time-manila>--</b> in Manila. Your team works your hours.</span></p>
     </div>
   </section>
 
-  <section class="offers" aria-labelledby="offers-title">
+  <!-- TERMS -->
+  <section class="terms-strip" aria-labelledby="offers-title">
     <div class="container">
       <h2 id="offers-title" class="sr-only">The terms at a glance</h2>
       <ul class="terms">
-        <li><strong>From $600</strong><span>every 2 weeks for a full-time specialist, 40 h/week</span></li>
-        <li><strong>No contract</strong><span>for your first month. Pay that month and walk away if it's not right.</span></li>
-        <li><strong>Free replacement</strong><span>if your specialist isn't the right fit</span></li>
-        <li><strong>6-month terms</strong><span>after that, renewing until you cancel</span></li>
+        <li class="reveal"><strong>From $600</strong><span>every 2 weeks for a full-time specialist, 40 h/week</span></li>
+        <li class="reveal" style="--d:.06s"><strong>No contract</strong><span>for your first month. Pay that month and walk away if it's not right.</span></li>
+        <li class="reveal" style="--d:.12s"><strong>Free replacement</strong><span>if your specialist isn't the right fit</span></li>
+        <li class="reveal" style="--d:.18s"><strong>6-month terms</strong><span>after that, renewing until you cancel</span></li>
       </ul>
-      <p class="terms-perks"><span class="offer-flag">Limited-time</span> Free website development with a full-time hire. <span class="terms-sep" aria-hidden="true">·</span> <span class="team-flag">Team perk</span> Hire 6+ staff and get a custom system, website, dashboard and CRM included.</p>
+      <p class="perks"><span><span class="flag flag-red">Limited-time</span> Free website development with a full-time hire.</span><span><span class="flag flag-gold">Team perk</span> Hire 6+ staff and get a custom system, website, dashboard and CRM included.</span></p>
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section class="band" id="services" aria-labelledby="services-title">
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">What we offer</p>
-        <h2 id="services-title">Services shaped around your business</h2>
-        <p class="section-intro">Pick one service or combine several. Every engagement is shaped around your business.</p>
+        <h2 id="services-title" class="title">Services shaped around <em>your business</em></h2>
+        <p class="lead">Pick one service or combine several. Every engagement is shaped around your business.</p>
       </div>
-      <div class="card-grid">
-        <article class="card reveal">
+      <div class="grid cols-4">
+        <a class="card reveal" href="/services.html#offshore-staff">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="2.6"/><circle cx="16.2" cy="9" r="2"/><path d="M4.2 18.5c.5-2.6 2.4-4 4.8-4s4.3 1.4 4.8 4"/><path d="M14 14.8c1.3-.3 2.6 0 3.5 1.1.6.8 1 1.8 1.2 2.6"/></svg></div>
           <h3>Offshore staff</h3>
           <p>Telemarketers, lead generation specialists, customer service agents, and operations or virtual assistants.</p>
-          <a class="more" href="services.html#offshore-staff">Learn more <span class="sr-only">about offshore staff</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" style="--d:.05s" href="/services.html#lead-sourcing">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3.2V6M12 18v2.8M3.2 12H6M18 12h2.8"/></svg></div>
           <h3>Done-for-you lead sourcing</h3>
           <p>Researched, organized lists of businesses that match your ideal customer, ready for outreach.</p>
-          <a class="more" href="services.html#lead-sourcing">Learn more <span class="sr-only">about done-for-you lead sourcing</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" style="--d:.1s" href="/services.html#outbound">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5v-.8a7.5 7.5 0 0 1 15 0v.8"/><path d="M4.5 12.5h2.4v4.6H5.6A1.6 1.6 0 0 1 4 15.5v-3zM19.5 12.5H17v4.6h1.3a1.6 1.6 0 0 0 1.2-1.6v-3z"/><path d="M8.2 17.6c.5 1.1 1.8 1.9 3.8 1.9h1.2"/></svg></div>
           <h3>Outbound email and calling</h3>
           <p>Cold email and phone campaigns to book conversations and appointments for your team.</p>
-          <a class="more" href="services.html#outbound">Learn more <span class="sr-only">about outbound email and calling</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" style="--d:.15s" href="/services.html#social-video">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="6.5" width="12" height="11" rx="2"/><path d="M15 10.2 21 7.6v8.8l-6-2.6z"/></svg></div>
           <h3>Social media and video</h3>
           <p>Facebook posting, YouTube channel support, scripts and thumbnails.</p>
-          <a class="more" href="services.html#social-video">Learn more <span class="sr-only">about social media and video</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" href="/services.html#custom-systems">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></div>
           <h3>Custom systems</h3>
           <p>Websites, CRMs, dashboards, and web or mobile apps built around how you work.</p>
-          <a class="more" href="services.html#custom-systems">Learn more <span class="sr-only">about custom systems</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" style="--d:.05s" href="/services.html#back-office">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="6" y="3.5" width="12" height="17" rx="2"/><path d="M9 3.5h6V6.2H9zM9 10.5h6M9 14.2h4"/></svg></div>
           <h3>Back office</h3>
           <p>Payroll, HR support, staff end-of-day report monitoring and scheduling.</p>
-          <a class="more" href="services.html#back-office">Learn more <span class="sr-only">about back office</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" style="--d:.1s" href="/services.html#ai-agents">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.2 13.2 8.1 18 9.3 13.2 10.5 12 15.4 10.8 10.5 6 9.3 10.8 8.1 12 3.2z"/><path d="M17.4 14.2l.55 1.7 1.75.2-1.35 1.15.45 1.7-1.4-.85-1.4.85.45-1.7-1.35-1.15 1.75-.2z"/></svg></div>
           <h3>Managed AI agent fleet</h3>
           <p>AI agents set up and supervised to handle repetitive research, follow-ups and reporting.</p>
-          <a class="more" href="services.html#ai-agents">Learn more <span class="sr-only">about the managed AI agent fleet</span><span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card reveal">
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="card reveal" style="--d:.15s" href="/services.html#freelance">
           <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3"/><path d="M5.5 19.2c.8-3.1 3.1-4.7 6.5-4.7s5.7 1.6 6.5 4.7"/></svg></div>
           <h3>Freelance and team management</h3>
           <p>Work directly with our founder on a project, or have him manage your remote team for you.</p>
-          <a class="more" href="services.html#freelance">Learn more <span class="sr-only">about freelance and team management</span><span aria-hidden="true">→</span></a>
-        </article>
+          <span class="link-arrow">Learn more <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
       </div>
-      <p class="section-cta reveal"><a class="btn btn-ghost" href="services.html">Browse services in detail</a></p>
+      <p class="section-cta reveal"><a class="btn btn-ghost" href="/services.html">Browse services in detail</a></p>
     </div>
   </section>
 
+  <!-- HOW -->
   <section class="band band-paper" id="how" aria-labelledby="how-title">
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">The process</p>
-        <h2 id="how-title">How it works</h2>
-        <p class="section-intro">Three steps from first call to a working team. No long forms, no recruiting on your side.</p>
+        <h2 id="how-title" class="title">How it <em>works</em></h2>
+        <p class="lead">Three steps from first call to a working team. No long forms, no recruiting on your side.</p>
       </div>
-      <div class="how-layout">
-        <ol class="steps reveal">
-          <li>
-            <span class="step-num">01</span>
-            <div>
-              <h3>Book a discovery call</h3>
-              <p>In 30 minutes we go through the work: the roles, the hours, the tools you use and what a good result looks like for you.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">02</span>
-            <div>
-              <h3>We build your plan and team</h3>
-              <p>We propose the right mix of offshore staff, services and systems, then set up the people, scripts, processes and reporting.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">03</span>
-            <div>
-              <h3>Launch, monitor and improve</h3>
-              <p>Your team starts working. We track daily output with end-of-day reports, keep you informed and adjust as your needs change.</p>
-            </div>
-          </li>
-        </ol>
-        <figure class="frame reveal">
-          <img src="assets/img/video-call.webp" width="1152" height="864" alt="A man speaks and gestures toward a laptop during a video call." loading="lazy" decoding="async">
-        </figure>
-      </div>
-      <p class="section-cta reveal"><a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></p>
+      <ol class="steps light">
+        <li class="reveal">
+          <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>01</span></div>
+          <h3>Book a discovery call</h3>
+          <p>In 30 minutes we go through the work: the roles, the hours, the tools you use and what a good result looks like for you.</p>
+        </li>
+        <li class="reveal" style="--d:.08s">
+          <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="2.6"/><circle cx="16.2" cy="9" r="2"/><path d="M4.2 18.5c.5-2.6 2.4-4 4.8-4s4.3 1.4 4.8 4"/><path d="M14 14.8c1.3-.3 2.6 0 3.5 1.1.6.8 1 1.8 1.2 2.6"/></svg><span>02</span></div>
+          <h3>We build your plan and team</h3>
+          <p>We propose the right mix of offshore staff, services and systems, then set up the people, scripts, processes and reporting.</p>
+        </li>
+        <li class="reveal" style="--d:.16s">
+          <div class="step-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 19h16"/><path d="m7 14 4-4 3 3 5-6"/></svg><span>03</span></div>
+          <h3>Launch, monitor and improve</h3>
+          <p>Your team starts working. We track daily output with end-of-day reports, keep you informed and adjust as your needs change.</p>
+        </li>
+      </ol>
+      <p class="section-cta reveal">
+        <a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a>
+        <a class="btn btn-ghost" href="/process.html">See how we work</a>
+      </p>
     </div>
   </section>
 
-  <section class="band band-value" id="value" aria-labelledby="value-title">
+  <!-- VALUE -->
+  <section class="band on-dark" id="value" aria-labelledby="value-title">
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">The responsible choice</p>
-        <h2 id="value-title">Grow without growing your overhead</h2>
-        <p class="section-intro">Every hour you spend on inbox, scheduling, data entry or follow-ups is an hour you're not spending on the work that brings in revenue.</p>
+        <h2 id="value-title" class="title">Grow without growing <em>your overhead</em></h2>
+        <p class="lead">Every hour you spend on inbox, scheduling, data entry or follow-ups is an hour you're not spending on the work that brings in revenue.</p>
       </div>
       <div class="price-board reveal">
         <h3 class="price-heading">A full-time year, side by side</h3>
@@ -256,48 +290,69 @@
             <p class="calc-save"><span>You keep about</span><strong data-calc-save>$46,236</strong><em>every year</em></p>
             <p class="calc-wait"><span>Every month you wait costs about</span><strong data-calc-wait>$3,853</strong></p>
             <p class="calc-time"><span>Hours handed off each year: <b data-calc-hours>2,080</b>. At your rate, that's</span><strong data-calc-time>$156,000</strong><em>of your time back</em></p>
-            <p class="calc-perk" data-calc-perk hidden><span class="team-flag">Team perk</span> Custom system, website, dashboard and CRM included.</p>
+            <p class="calc-perk" data-calc-perk hidden><span class="flag flag-gold">Team perk</span> Custom system, website, dashboard and CRM included.</p>
           </div>
         </div>
         </details>
         <p class="price-footnote">Local cost estimate: full-time administrative assistant (40 h/week) at the Toronto Region median wage of $26.50/h (Government of Canada <a href="https://www.jobbank.gc.ca/marketreport/wages-occupation/24789/geo9219">Job Bank</a>, NOC 13110), plus mandatory 4% vacation pay (Ontario ESA) and 2026 employer CPP (5.95%) and EI (2.282%). Minimum-wage floor uses Ontario's $17.95/h (Oct 2026). Excludes recruiting, benefits, equipment, office space and WSIB. All amounts in CAD.</p>
       </div>
       <p class="value-close reveal">No recruiting, no benefits or payroll overhead, and no contract for your first month. You turn a fixed cost into a flexible one.</p>
-      <p class="section-cta reveal"><a class="btn btn-light" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></p>
+      <p class="section-cta center reveal"><a class="btn btn-light" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></p>
     </div>
   </section>
 
+  <!-- WHY -->
   <section class="band" id="why" aria-labelledby="why-title">
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">An honest look</p>
-        <h2 id="why-title">Why offshore staff from the Philippines?</h2>
-        <p class="section-intro">Offshore staffing is not right for every role, but for many Canadian businesses it is a practical way to add capacity. Here is an honest look at the benefits.</p>
+        <h2 id="why-title" class="title">Why offshore staff from <em>the Philippines?</em></h2>
+        <p class="lead">Offshore staffing is not right for every role, but for many Canadian businesses it is a practical way to add capacity. Here is an honest look at the benefits.</p>
       </div>
-      <div class="why-layout">
-        <figure class="frame frame-alt frame-video reveal">
-          <img src="assets/img/bpo-office-team.webp" width="1280" height="720" alt="People wearing headsets work at rows of desks in a bright open office, while a colleague stands to help." loading="lazy" decoding="async">
-          <video data-min-width="0" data-webm="assets/video/bpo-office-team.webm" data-mp4="assets/video/bpo-office-team.mp4" muted loop playsinline poster="assets/img/bpo-office-team.webp" aria-hidden="true"></video>
-        </figure>
-        <ul class="checks reveal">
-          <li><strong>Strong English communication.</strong> English is an official language in the Philippines and is widely used in business and education.</li>
-          <li><strong>Cost-effective capacity.</strong> Labour costs in the Philippines are generally lower than in Canada, so your budget can cover more hours of support.</li>
-          <li><strong>Experienced talent pool.</strong> The Philippines has a large, established outsourcing industry with many people experienced in calling, customer service and admin work.</li>
-          <li><strong>Coverage across Canadian time zones.</strong> Staff can work shifts aligned with your business hours, from Atlantic to Pacific time, or after hours for extended coverage.</li>
-          <li><strong>Managed, not just hired.</strong> We pair staff with clear processes, scripts and daily end-of-day reporting so you can see what is getting done.</li>
+      <div class="split top">
+        <div class="art reveal" aria-hidden="true">
+          <svg viewBox="0 0 500 460" fill="none">
+            <g stroke="rgba(255,255,255,.07)"><path d="M0 115h500M0 230h500M0 345h500M125 0v460M250 0v460M375 0v460"/></g>
+            <g font-family="Manrope, sans-serif" font-size="12" font-weight="800" letter-spacing="2">
+              <text x="40" y="92" fill="#a3aec4">YOUR BUSINESS HOURS</text>
+              <text x="40" y="232" fill="#a3aec4">YOUR TEAM IN THE PHILIPPINES</text>
+            </g>
+            <rect x="40" y="108" width="420" height="18" rx="9" fill="rgba(255,255,255,.08)"/>
+            <rect x="150" y="108" width="200" height="18" rx="9" fill="#1f3fa6"/>
+            <rect x="40" y="248" width="420" height="18" rx="9" fill="rgba(255,255,255,.08)"/>
+            <rect x="150" y="248" width="200" height="18" rx="9" fill="#d6262e">
+              <animate attributeName="width" values="0;200;200" keyTimes="0;.45;1" dur="6s" repeatCount="indefinite"/>
+            </rect>
+            <path d="M150 140v92M350 140v92" stroke="#f2b51f" stroke-width="1.5" stroke-dasharray="4 6"/>
+            <g transform="translate(250 330)">
+              <circle r="30" fill="rgba(242,181,31,.15)"/>
+              <path d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#f2b51f"/>
+            </g>
+          </svg>
+          <div class="caption"><b>Shifts aligned with<br>your business hours.</b><small>From Atlantic to Pacific time, or after hours</small></div>
+        </div>
+        <ul class="checks">
+          <li class="reveal"><strong>Strong English communication.</strong> English is an official language in the Philippines and is widely used in business and education.</li>
+          <li class="reveal" style="--d:.05s"><strong>Cost-effective capacity.</strong> Labour costs in the Philippines are generally lower than in Canada, so your budget can cover more hours of support.</li>
+          <li class="reveal" style="--d:.1s"><strong>Experienced talent pool.</strong> The Philippines has a large, established outsourcing industry with many people experienced in calling, customer service and admin work.</li>
+          <li class="reveal" style="--d:.15s"><strong>Coverage across Canadian time zones.</strong> Staff can work shifts aligned with your business hours, from Atlantic to Pacific time, or after hours for extended coverage.</li>
+          <li class="reveal" style="--d:.2s"><strong>Managed, not just hired.</strong> We pair staff with clear processes, scripts and daily end-of-day reporting so you can see what is getting done.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="band band-faq" id="faq" aria-labelledby="faq-title">
-    <div class="container">
-      <div class="section-head reveal">
+  <!-- FAQ -->
+  <section class="band band-paper" id="faq" aria-labelledby="faq-title">
+    <div class="container split top">
+      <div class="section-head reveal sticky-col" style="margin-bottom:0">
         <p class="eyebrow">Straight answers</p>
-        <h2 id="faq-title">Questions business owners ask us</h2>
+        <h2 id="faq-title" class="title">Questions business owners <em>ask us</em></h2>
+        <p class="lead">Still unsure? A 30-minute discovery call is the fastest way to get answers for your situation.</p>
+        <p class="section-cta"><a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></p>
       </div>
-      <div class="faq reveal">
-        <details>
+      <div class="faq reveal" style="--d:.08s">
+        <details open>
           <summary>What does it cost?</summary>
           <p>A full-time specialist (40 hours a week) starts from CAD $600 every 2 weeks. For a limited time, website development is free when you hire a full-time specialist. Tailored systems and CRMs are custom-quoted, or included when you hire 6 or more staff.</p>
         </details>
@@ -329,49 +384,19 @@
     </div>
   </section>
 
-  <section class="band band-paper" id="contact" aria-labelledby="contact-title">
+  <!-- CONTACT -->
+  <section class="band" id="contact" aria-labelledby="contact-title">
     <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let's talk about your business</h2>
-        <p class="section-intro">Tell us what you would like help with and we will reply by email with next steps.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="reveal">
-          <p>The fastest way to start is a 30-minute discovery call. Pick a time that suits you:</p>
-          <p><a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></p>
-          <p>Or email us at:</p>
-          <p class="email-big"><a href="mailto:hello@northislepartners.org?subject=Northisle%20Partners%20enquiry">hello@northislepartners.org</a></p>
-          <p class="help">Helpful details to include: your business name, what the role or project involves, the hours you need covered and when you would like to start.</p>
+      <div class="cta reveal">
+        <div>
+          <h2 id="contact-title">Let's talk about your business</h2>
+          <p>The fastest way to start is a 30-minute discovery call. Or tell us what you'd like help with and we'll reply by email with next steps.</p>
         </div>
-        <form class="mailform reveal" id="mailform" action="https://formsubmit.co/hello@northislepartners.org" method="POST">
-          <input type="hidden" name="_next" value="https://northislepartners.org/thank-you">
-          <input type="hidden" name="_subject" value="New enquiry from northislepartners.org">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="field-row">
-            <label>Name <span class="req">(required)</span>
-              <input id="f-name" name="name" type="text" autocomplete="name" required>
-            </label>
-            <label>Company
-              <input id="f-company" name="company" type="text" autocomplete="organization">
-            </label>
-          </div>
-          <div class="field-row">
-            <label>Email <span class="req">(required)</span>
-              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
-            </label>
-            <label>Phone
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
-            </label>
-          </div>
-          <label>Message <span class="req">(required)</span>
-            <textarea id="f-msg" name="message" required></textarea>
-          </label>
-          <button class="btn" type="submit">Send message</button>
-          <p class="hint">We'll reply by email within one business day.</p>
-          <p class="form-privacy">We use your details only to reply to you. See our <a href="/privacy.html">Privacy Policy</a>.</p>
-        </form>
+        <div class="actions">
+          <a class="btn btn-light" href="https://cal.com/northislepartners/discovery-call">Book a discovery call <svg class="ico arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost on-dark" href="/contact.html#mailform">Send us a message</a>
+          <a class="email-link" href="mailto:hello@northislepartners.org?subject=Northisle%20Partners%20enquiry">hello@northislepartners.org</a>
+        </div>
       </div>
     </div>
   </section>
@@ -380,19 +405,19 @@
 <div class="mobile-cta" data-mobile-cta><a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></div>
 
 <footer class="site-footer">
-  <div class="container footer-row">
-    <div>
-      <div class="word">
-        <picture>
-          <source srcset="assets/img/northisle-wordmark.webp" type="image/webp">
-          <img src="assets/img/northisle-wordmark.png" alt="Northisle Partners" width="502" height="96">
-        </picture>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="footer-logo" href="/"><picture><source srcset="/assets/img/northisle-wordmark.webp" type="image/webp"><img src="/assets/img/northisle-wordmark.png" alt="Northisle Partners" width="502" height="96"></picture></a>
+        <p>Dedicated offshore teams for Canadian businesses.</p>
       </div>
-      <p>Dedicated offshore teams for Canadian businesses.</p>
+      <div><h4>Explore</h4><ul><li><a href="/services.html">Services</a></li><li><a href="/process.html">How we work</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="/services.html#offshore-staff">Offshore staff</a></li><li><a href="/services.html#lead-sourcing">Lead sourcing</a></li><li><a href="/services.html#outbound">Outbound campaigns</a></li><li><a href="/services.html#custom-systems">Custom systems</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul><li><a href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></li><li><a href="mailto:hello@northislepartners.org">hello@northislepartners.org</a></li><li><a href="/privacy.html">Privacy Policy</a></li></ul></div>
     </div>
-    <p>© <span id="yr">2026</span> Northisle Partners. <a href="services.html">Services</a> · <a href="/privacy.html">Privacy</a> · <a href="mailto:hello@northislepartners.org">hello@northislepartners.org</a></p>
+    <div class="footer-bottom"><span>© <span id="yr">2026</span> Northisle Partners</span><span>Philippines-based teams for Canadian businesses</span></div>
   </div>
 </footer>
-<script src="main.js" defer></script>
+<script src="/main.js" defer></script>
 </body>
 </html>

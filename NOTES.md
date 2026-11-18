@@ -4,6 +4,7 @@
 - Canonical URL: https://northislepartners.org/ (custom domain set by `CNAME`)
 - Services page: https://northislepartners.org/services.html
 - Hosting: GitHub Pages (northislepartners.org) and Netlify (northislepartners.netlify.app) both serve the `gh-pages` branch root, with no build step. `.nojekyll` is present. Pushing to `gh-pages` publishes both.
+- Styles: public pages (home, services, process, about, contact, privacy, thank-you, 404) use `site.css`; `styles.css` now only serves /careers/. Both share `main.js`.
 - SEO files: `robots.txt`, `sitemap.xml` (add new pages here) and `404.html` (uses root-relative paths so it works at any URL).
 - Social preview: `og-image.png`. A base64 copy is kept in `og-image.png.b64` for text-only uploads. `.github/workflows/decode-og-image.yml` decodes it when that file changes on `main` or `gh-pages`.
 - Booking: every "Book a discovery call" button links to https://cal.com/northislepartners/discovery-call (30 min).

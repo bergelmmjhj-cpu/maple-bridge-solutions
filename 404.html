@@ -2,6 +2,7 @@
 <html lang="en-CA">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add("js");</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found | Northisle Partners</title>
 <meta name="robots" content="noindex">
@@ -9,9 +10,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,620;1,9..144,520&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container header-bar">
     <a class="brand" href="/">
@@ -20,21 +22,50 @@
         <img src="/assets/img/northisle-wordmark.png" alt="Northisle Partners" width="502" height="96">
       </picture>
     </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Open menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/process.html">How we work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a class="btn btn-small" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
+
 <main id="main">
-  <section class="page-hero">
+  <section class="page-hero" aria-labelledby="nf-title">
     <div class="container">
-      <p class="eyebrow">Error 404</p>
-      <h1>We couldn't find that page</h1>
-      <p class="section-intro">The link may be old or mistyped. Here are the best places to go next.</p>
-      <div class="cta-row">
-        <a class="btn" href="/">Go to the home page</a>
-        <a class="btn btn-ghost" href="/services.html">See all services</a>
-      </div>
-      <p class="note">Or email us at <a href="mailto:hello@northislepartners.org">hello@northislepartners.org</a></p>
+      <p class="eyebrow rise">Error 404</p>
+      <h1 id="nf-title" class="display rise" style="--d:.06s">We couldn't find that page</h1>
+      <p class="lead rise" style="--d:.12s">The link may be old or mistyped. Here are the best places to go next.</p>
+      <div class="cta-row rise" style="--d:.18s"><a class="btn" href="/">Go to the home page</a><a class="btn btn-ghost" href="/services.html">See all services</a></div>
+      <p class="note rise" style="--d:.24s">Or email us at <a href="mailto:hello@northislepartners.org">hello@northislepartners.org</a></p>
     </div>
   </section>
 </main>
+
+<div class="mobile-cta" data-mobile-cta><a class="btn" href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="footer-logo" href="/"><picture><source srcset="/assets/img/northisle-wordmark.webp" type="image/webp"><img src="/assets/img/northisle-wordmark.png" alt="Northisle Partners" width="502" height="96"></picture></a>
+        <p>Dedicated offshore teams for Canadian businesses.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="/services.html">Services</a></li><li><a href="/process.html">How we work</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="/services.html#offshore-staff">Offshore staff</a></li><li><a href="/services.html#lead-sourcing">Lead sourcing</a></li><li><a href="/services.html#outbound">Outbound campaigns</a></li><li><a href="/services.html#custom-systems">Custom systems</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul><li><a href="https://cal.com/northislepartners/discovery-call">Book a discovery call</a></li><li><a href="mailto:hello@northislepartners.org">hello@northislepartners.org</a></li><li><a href="/privacy.html">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="yr">2026</span> Northisle Partners</span><span>Philippines-based teams for Canadian businesses</span></div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
 </body>
 </html>
